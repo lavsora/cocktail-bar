@@ -15,7 +15,6 @@ export const cocktailsSlice = createSlice({
         likeCocktail: (state, action) => {
             const indexDrink = state.drinks.findIndex(({idDrink}) => idDrink === action.payload);
                 state.drinks[indexDrink].liked = !state.drinks[indexDrink].liked;
-                state.drinks[indexDrink].liked ? console.log('true') : console.log('false')
         },
 
         removeCocktail: (state, action) => {
