@@ -18,9 +18,9 @@ const Card = (props) => {
           <img src={props.data.strDrinkThumb} alt={props.data.strDrink} />
           <div className={styles.shadow}></div>
           <div className={styles.actions}>
-            <div className={styles.like_button}>
+            <div className={props.data.liked ? styles.like_button + ' ' + styles.liked : styles.like_button}>
               <button
-                className={styles.click_like_button}
+                className={props.data.liked ? styles.click_like_button + ' ' + styles.liked : styles.click_like_button}
                 onClick={() => dispatch(likeCocktail(props.data.idDrink))}
               >
                 <img src={iconLike} alt="Like" />
