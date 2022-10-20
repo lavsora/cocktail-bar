@@ -1,122 +1,105 @@
 .card {
-  width: 250px;
-  text-align: center;
-  background: white;
-  margin: 50px;
-}
-
-.card_image {
-  position: relative;
-}
-
-.card_image img {
-  display: block;
-  width: 100%;
-}
-
-.shadow {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  opacity: 0;
-  transition: 0.5s ease-in-out;
-}
-
-.card:hover .shadow {
-  opacity: 1;
-}
-
-.actions {
-  bottom: 15px;
-  right: 15px;
-  position: absolute;
-}
-
-.like_button {
-  opacity: 0;
-  visibility: hidden;
-  transform: translate(0, -50px);
-  transition: 1s ease-in-out;
-}
-
-.actions button {
-  background: #202020;
-  color: white;
-  display: block;
-  height: 36px;
-  transition: 0.3s ease-in-out;
-  text-decoration: none;
-  border: none;
-  outline: none;
-}
-
-.like_button.liked, .actions button.liked {
-  background: #ff0f0f;
-  opacity: 1;
-  visibility: visible;
-  transform: translate(0, 0);
-}
-
-.click_like_button:hover {
-  background: #ff0f0f;
-}
-
-.click_delete_button:hover {
-  background: #0744e9;
-}
-
-.card:hover .like_button {
-  opacity: 1;
-  visibility: visible;
-  transform: translate(0, 0);
-}
-
-.delete_button {
-  opacity: 0;
-  visibility: hidden;
-  transform: translate(0, -50px);
-  transition: 0.8s ease-in-out;
-  margin: 9px 0 0;
-}
-
-.card:hover .delete_button {
-  opacity: 1;
-  visibility: visible;
-  transform: translate(0, 0);
-}
-
-.card_list {
-  margin-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  font-family: "Open Sans", serif;
-}
-
-.card_list h3 {
-  color: rgb(0, 0, 0);
-  font-size: 15px;
-  font-family: "Open Sans", serif;
-}
-
-@media only screen and (max-width: 376px) {
-  .card {
-    width: 200px;
+    width: 250px;
+    text-align: center;
+    background: white;
+    margin: 50px;
   }
-}
-
-@media only screen and (max-width: 426px) {
-  .card .like_button {
+  .card_image {
+    position: relative;
+  }
+  .card_image img {
+    display: block;
+    width: 100%;
+  }
+  .shadow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+  .card:hover .shadow {
+    opacity: 1;
+  }
+  .actions {
+    bottom: 15px;
+    right: 15px;
+    position: absolute;
+  }
+  .like_button {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(0, -50px);
+    transition: 1s ease-in-out;
+  }
+  .actions button {
+    background: #202020;
+    color: white;
+    display: block;
+    height: 36px;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    border: none;
+    outline: none;
+  }
+  .actions .click_like_button:hover {
+    background: #0744e9;
+  }
+  .click_like_button img:hover{
+    transform: scale(1.1);
+  }
+  .actions .click_delete_button:hover {
+    background: #ff0f0f;
+  }
+  .click_delete_button img:hover{
+    transform: scale(1.1);
+  }
+  .card:hover .like_button {
     opacity: 1;
     visibility: visible;
     transform: translate(0, 0);
   }
-
-  .card .delete_button {
+  .delete_button {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(0, -50px);
+    transition: 0.8s ease-in-out;
+    margin: 9px 0 0;
+  }
+  .card:hover .delete_button {
     opacity: 1;
     visibility: visible;
     transform: translate(0, 0);
   }
-}
+  .card_list {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: "Open Sans", serif;
+  }
+  .card_list h3 {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-family: "Open Sans", serif;
+  }
+  
+  @media only screen and (max-width: 376px) {
+    .card {
+      width: 200px;
+    }
+  }
+  @media only screen and (max-width: 426px) {
+    .card .like_button {
+      opacity: 1;
+      visibility: visible;
+      transform: translate(0, 0);
+    }
+    .card .delete_button {
+      opacity: 1;
+      visibility: visible;
+      transform: translate(0, 0);
+    }
+  }
