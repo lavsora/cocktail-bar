@@ -46,18 +46,20 @@
     outline: none;
   }
   .actions .click_like_button:hover {
-    background: #0744e9;
-  }
-  .click_like_button img:hover{
-    transform: scale(1.1);
-  }
-  .actions .click_delete_button:hover {
     background: #ff0f0f;
   }
-  .click_delete_button img:hover{
-    transform: scale(1.1);
+  .actions .click_delete_button:hover {
+    background: #0744e9;
   }
   .card:hover .like_button {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, 0);
+  }
+  .click_like_button.liked {
+    background: #ff0f0f;
+  }
+  .like_button.liked {
     opacity: 1;
     visibility: visible;
     transform: translate(0, 0);
